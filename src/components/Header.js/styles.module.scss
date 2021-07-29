@@ -1,0 +1,52 @@
+.headerContainer {
+  height: 93px;
+  width: 100%;
+  padding: 0 27px;
+
+  background: var(--third);
+  box-shadow: 4px 4px 16px rgba(1, 28, 64, 0.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  svg {
+    width: 9.8rem;
+    height: 3.5rem;
+  }
+
+  nav {
+    width: 40rem;
+    margin: 0 4.25rem;
+
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 375px) {
+    height: 56px;
+
+    svg {
+      width: 3.6rem;
+    }
+  }
+
+  .anchorDesactivated {
+    background: transparent;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    cursor: pointer;
+
+    border-bottom-width: solid 3px #000;
+  }
+
+  .anchorActivated {
+    background: transparent;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    border-bottom-width: solid 3px #000;
+  }
+}
